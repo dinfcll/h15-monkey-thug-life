@@ -6,6 +6,9 @@
 #include "Fonctionnalite\BaseFunc.h"
 #include "GestionRoute\Voie.h"
 #include "Perso\Monkey.h"
+#include "Nuage.h"
+#include "Arbre.h"
+
 using namespace Leap;
 using namespace std;
 
@@ -24,12 +27,19 @@ float VitesseTransparence = 0.5f;
 float CptTransparence = 0;
 
 
-Voie* Testvoie = new Voie(-100,200,15, 2.0f, Ressources);
+Voie* Testvoie = new Voie(-100,200,15, 4, Ressources);
+Arbre* Testarbre = new Arbre(30,60,2,Ressources,1);
+Arbre* Testarbre2 = new Arbre(1000,60,2,Ressources,1);
+Arbre* Testarbrebas = new Arbre(300,60,2,Ressources,2);
+Arbre* Testarbrebas2 = new Arbre(1300,60,2,Ressources,2);
+
 Monkey* MonkeyJoueur = new Monkey(0,100,Ressources);
+Nuage* Testnuage = new Nuage(50,20,1,Ressources);
+Nuage* Testnuage2 = new Nuage(1000,20,1,Ressources);
 
 int main(int argc, char* args[])
 {
-	Uint32 ColorBg[4] = {0xAA,0xFF,0xFF,0XFF};
+	Uint32 ColorBg[4] = {0x00,0x85,0x00,0XFF};
 	bool quit = false;
     SDL_Event e;
 	Controller controller;
@@ -72,13 +82,23 @@ int main(int argc, char* args[])
 			}
 
 			Testvoie->Update();
+			Testarbre->Update();
+			Testarbre2->Update();
+			Testarbrebas->Update();
+			Testarbrebas2->Update();
 			MonkeyJoueur->Update();
-			
+			Testnuage->Update();
+			Testnuage2->Update();
 			
 			//[DRAW]
 			Testvoie->Draw(SurfaceDessin);
+			Testarbre->Draw(SurfaceDessin);
+			Testarbre2->Draw(SurfaceDessin);
+			Testarbrebas->Draw(SurfaceDessin);
+			Testarbrebas2->Draw(SurfaceDessin);
 			MonkeyJoueur->Draw(SurfaceDessin);
-		
+			Testnuage->Draw(SurfaceDessin);
+			Testnuage2->Draw(SurfaceDessin);
 			
 
 			//aplha mode
@@ -92,10 +112,10 @@ int main(int argc, char* args[])
 
 
 			/****** CONTROLLER AND LISTENER PART ********/
-			/*std::cout << std::string(2, ' ') << "LEFT " <<  "pitch: " << listener.RPitch<< " degrees, "
+			std::cout << std::string(2, ' ') << "LEFT " <<  "pitch: " << listener.RPitch<< " degrees, "
 			<< "roll: " << listener.RRoll << " degrees, "
 			<< "yaw: " << listener.RYaw << " degrees" << std::endl;
-*/
+
 			//[Background color change]
 			ColorBg[0] = (Uint32)abs(listener.RRoll/175 * 255);
 			if(ColorBg[0] >= 255) ColorBg[0] = 0;

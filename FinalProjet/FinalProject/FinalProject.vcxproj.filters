@@ -73,6 +73,12 @@
     <Filter Include="Fichiers d%27en-tête\LeapMotion">
       <UniqueIdentifier>{5fb79546-c329-4fe1-9f61-b500537c1675}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\GestionDecor">
+      <UniqueIdentifier>{d4cf8d77-d205-4250-9a3f-f92562b9792c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\GestionDecor">
+      <UniqueIdentifier>{538efcc9-05d8-44af-b413-75024f19b5fa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -104,6 +110,12 @@
     </ClCompile>
     <ClCompile Include="Perso\Monkey.cpp">
       <Filter>Fichiers sources\Perso</Filter>
+    </ClCompile>
+    <ClCompile Include="Nuage.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="Arbre.cpp">
+      <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -334,6 +346,12 @@
     </ClInclude>
     <ClInclude Include="Perso\Monkey.h">
       <Filter>Fichiers d%27en-tête\Perso</Filter>
+    </ClInclude>
+    <ClInclude Include="Nuage.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+    <ClInclude Include="Arbre.h">
+      <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
