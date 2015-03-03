@@ -68,6 +68,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Arbre.cpp" />
     <ClCompile Include="Fonctionnalite\BaseFunc.cpp" />
     <ClCompile Include="Fonctionnalite\Ressource.cpp" />
     <ClCompile Include="GestionAnimation\Animation.cpp" />
@@ -77,9 +78,11 @@
     <ClCompile Include="GestionRoute\Voie.cpp" />
     <ClCompile Include="LeapMotion\LeapListener.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Nuage.cpp" />
     <ClCompile Include="Perso\Monkey.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Arbre.h" />
     <ClInclude Include="Fonctionnalite\BaseFunc.h" />
     <ClInclude Include="Fonctionnalite\Ressource.h" />
     <ClInclude Include="GestionAnimation\Animation.h" />
@@ -90,6 +93,7 @@
     <ClInclude Include="include\Leap.h" />
     <ClInclude Include="include\LeapMath.h" />
     <ClInclude Include="LeapMotion\LeapListener.h" />
+    <ClInclude Include="Nuage.h" />
     <ClInclude Include="Perso\Monkey.h" />
     <ClInclude Include="SDL\Image\SDL_image.h" />
     <ClInclude Include="SDL\include\begin_code.h" />
