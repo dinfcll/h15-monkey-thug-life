@@ -111,11 +111,11 @@
     <ClCompile Include="Perso\Monkey.cpp">
       <Filter>Fichiers sources\Perso</Filter>
     </ClCompile>
-    <ClCompile Include="Nuage.cpp">
-      <Filter>Fichiers sources</Filter>
+    <ClCompile Include="GestionDecor\Arbre.cpp">
+      <Filter>Fichiers sources\GestionDecor</Filter>
     </ClCompile>
-    <ClCompile Include="Arbre.cpp">
-      <Filter>Fichiers sources</Filter>
+    <ClCompile Include="GestionDecor\Nuage.cpp">
+      <Filter>Fichiers sources\GestionDecor</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -347,11 +347,11 @@
     <ClInclude Include="Perso\Monkey.h">
       <Filter>Fichiers d%27en-tête\Perso</Filter>
     </ClInclude>
-    <ClInclude Include="Nuage.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+    <ClInclude Include="GestionDecor\Arbre.h">
+      <Filter>Fichiers d%27en-tête\GestionDecor</Filter>
     </ClInclude>
-    <ClInclude Include="Arbre.h">
-      <Filter>Fichiers d%27en-tête</Filter>
+    <ClInclude Include="GestionDecor\Nuage.h">
+      <Filter>Fichiers d%27en-tête\GestionDecor</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

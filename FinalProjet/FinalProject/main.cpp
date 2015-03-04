@@ -6,8 +6,8 @@
 #include "Fonctionnalite\BaseFunc.h"
 #include "GestionRoute\Voie.h"
 #include "Perso\Monkey.h"
-#include "Nuage.h"
-#include "Arbre.h"
+#include "GestionDecor\Nuage.h"
+#include "GestionDecor\Arbre.h"
 
 using namespace Leap;
 using namespace std;
@@ -112,9 +112,9 @@ int main(int argc, char* args[])
 
 
 			/****** CONTROLLER AND LISTENER PART ********/
-			std::cout << std::string(2, ' ') << "LEFT " <<  "pitch: " << listener.RPitch<< " degrees, "
+		/*	std::cout << std::string(2, ' ') << "LEFT " <<  "pitch: " << listener.RPitch<< " degrees, "
 			<< "roll: " << listener.RRoll << " degrees, "
-			<< "yaw: " << listener.RYaw << " degrees" << std::endl;
+			<< "yaw: " << listener.RYaw << " degrees" << std::endl;*/
 
 			//[Background color change]
 			ColorBg[0] = (Uint32)abs(listener.RRoll/175 * 255);
