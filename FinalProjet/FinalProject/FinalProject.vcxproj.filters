@@ -79,6 +79,18 @@
     <Filter Include="Fichiers sources\GestionDecor">
       <UniqueIdentifier>{538efcc9-05d8-44af-b413-75024f19b5fa}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\Ennemi">
+      <UniqueIdentifier>{95bc5a11-7e91-4ec1-b12e-963c50a5fd53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Ennemi">
+      <UniqueIdentifier>{9ff00c11-7a97-45e7-806f-a59b171a2868}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Ennemi\GestionCamion">
+      <UniqueIdentifier>{11760f6f-8439-42bf-9c64-f37d7ee4c907}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Ennemi\GestionCamion">
+      <UniqueIdentifier>{f015f3e3-08ed-40b8-9a9c-c861ad934d96}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -116,6 +128,9 @@
     </ClCompile>
     <ClCompile Include="GestionDecor\Nuage.cpp">
       <Filter>Fichiers sources\GestionDecor</Filter>
+    </ClCompile>
+    <ClCompile Include="Ennemi\GestionCamion\Camion.cpp">
+      <Filter>Fichiers sources\Ennemi\GestionCamion</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -352,6 +367,9 @@
     </ClInclude>
     <ClInclude Include="GestionDecor\Nuage.h">
       <Filter>Fichiers d%27en-tête\GestionDecor</Filter>
+    </ClInclude>
+    <ClInclude Include="Ennemi\GestionCamion\Camion.h">
+      <Filter>Fichiers d%27en-tête\Ennemi\GestionCamion</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

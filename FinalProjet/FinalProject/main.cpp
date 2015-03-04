@@ -8,6 +8,7 @@
 #include "Perso\Monkey.h"
 #include "GestionDecor\Nuage.h"
 #include "GestionDecor\Arbre.h"
+#include "Ennemi\GestionCamion\Camion.h"
 
 using namespace Leap;
 using namespace std;
@@ -37,14 +38,14 @@ Monkey* MonkeyJoueur = new Monkey(0,100,Ressources);
 Nuage* Testnuage = new Nuage(50,20,1,Ressources);
 Nuage* Testnuage2 = new Nuage(1000,20,1,Ressources);
 
+Camion* CamionEnnemi = new Camion(50,175,Ressources);
+
 int main(int argc, char* args[])
 {
 	Uint32 ColorBg[4] = {0x00,0x85,0x00,0XFF};
 	bool quit = false;
     SDL_Event e;
 	Controller controller;
-
-
 
 	//Set up Listener and link listener to controller
 	LeapListener listener;
@@ -89,6 +90,7 @@ int main(int argc, char* args[])
 			MonkeyJoueur->Update();
 			Testnuage->Update();
 			Testnuage2->Update();
+			CamionEnnemi->Update();
 			
 			//[DRAW]
 			Testvoie->Draw(SurfaceDessin);
@@ -96,6 +98,7 @@ int main(int argc, char* args[])
 			Testarbre2->Draw(SurfaceDessin);
 			Testarbrebas->Draw(SurfaceDessin);
 			Testarbrebas2->Draw(SurfaceDessin);
+			CamionEnnemi->Draw(SurfaceDessin);
 			MonkeyJoueur->Draw(SurfaceDessin);
 			Testnuage->Draw(SurfaceDessin);
 			Testnuage2->Draw(SurfaceDessin);

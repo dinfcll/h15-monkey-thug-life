@@ -19,6 +19,11 @@ public:
 	SDL_Surface* TextureArbre4;
 	SDL_Surface* TextureNuage1;
 	SDL_Surface* TextureNuage2;
+	SDL_Surface* CamionPODO;
+	SDL_Surface* CamionPOD1;
+	SDL_Surface* CamionPOD2;
+	SDL_Surface* CamionPOD3;
+	SDL_Surface* CamionPF;
 };
 
 

@@ -58,8 +58,8 @@ void AnimationPlayer::Draw(SDL_Surface* &screenSurface)
 			SDL_Rect* RecDestination = new SDL_Rect();
 			RecSource->x = FrameIndex * CurrentAnimation.FrameWidth;
 			RecSource->y = 0;
-			RecSource->w = CurrentAnimation.FrameHeight;
-			RecSource->h = CurrentAnimation.FrameWidth;
+			RecSource->w = CurrentAnimation.FrameWidth;
+			RecSource->h = CurrentAnimation.FrameHeight;
 
 			RecDestination->x = PosX; 
 			RecDestination->y = PosY; 
