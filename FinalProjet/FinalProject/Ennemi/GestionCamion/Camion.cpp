@@ -13,11 +13,11 @@ Camion::~Camion(void)
 Camion::Camion(int X, int Y, Ressource Ressources)
 {
 	CamionAP = new AnimationPlayer();
-	CamionPOD0 = new Animation(Ressources.CamionPODO,160,90,0.5f,true);
-	CamionPOD1 = new Animation(Ressources.CamionPOD1,160,90,0.5f,true);
-	CamionPOD2 = new Animation(Ressources.CamionPOD2,160,90,0.5f,true);
-	CamionPOD3 = new Animation(Ressources.CamionPOD3,160,90,0.5f,true);
-	CamionPF = new Animation(Ressources.CamionPF,160,90,0.5f,true);
+	CamionPOD0 = new Animation(Ressources.CamionPODO,200,112,0.5f,true);
+	CamionPOD1 = new Animation(Ressources.CamionPOD1,200,112,0.5f,true);
+	CamionPOD2 = new Animation(Ressources.CamionPOD2,200,112,0.5f,true);
+	CamionPOD3 = new Animation(Ressources.CamionPOD3,200,112,0.5f,true);
+	CamionPF = new Animation(Ressources.CamionPF,200,112,0.5f,true);
 	this->PosX = X;
 	this->PosY = Y;
 	TestAnimationCompteur = 0;
