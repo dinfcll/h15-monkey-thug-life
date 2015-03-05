@@ -5,7 +5,7 @@ class Animation
 {
 public:
 	Animation(void);
-	Animation(SDL_Surface* Texture, int FrameWidth,int FrameHeight, float FrameTime,float Resize, bool IsLooping);
+	Animation(SDL_Surface* Texture, int FrameWidth,int FrameHeight, float FrameTime, bool IsLooping);
 	~Animation(void);
 
 	SDL_Surface* Texture;

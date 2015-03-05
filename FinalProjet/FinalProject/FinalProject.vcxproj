@@ -68,6 +68,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Ennemi\GestionCamion\Camion.cpp" />
     <ClCompile Include="Fonctionnalite\BaseFunc.cpp" />
     <ClCompile Include="Fonctionnalite\Ressource.cpp" />
     <ClCompile Include="GestionAnimation\Animation.cpp" />
@@ -82,6 +83,7 @@
     <ClCompile Include="Perso\Monkey.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Ennemi\GestionCamion\Camion.h" />
     <ClInclude Include="Fonctionnalite\BaseFunc.h" />
     <ClInclude Include="Fonctionnalite\Ressource.h" />
     <ClInclude Include="GestionAnimation\Animation.h" />
