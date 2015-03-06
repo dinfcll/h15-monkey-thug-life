@@ -87,14 +87,14 @@ int main(int argc, char* args[])
 				MissileTest->PosX--;
 			}
 
-			Testvoie->Update();
-			Testarbre->Update();
-			Testarbre2->Update();
-			Testarbrebas->Update();
-			Testarbrebas2->Update();
-			MonkeyJoueur->Update();
-			Testnuage->Update();
-			Testnuage2->Update();
+			Testvoie->Update(&listener);
+			Testarbre->Update(&listener);
+			Testarbre2->Update(&listener);
+			Testarbrebas->Update(&listener);
+			Testarbrebas2->Update(&listener);
+			MonkeyJoueur->Update(&listener);
+			Testnuage->Update(&listener);
+			Testnuage2->Update(&listener);
 			CamionEnnemi->Update();
 			MissileTest->Update();
 			MotoEnnemi2->Update();

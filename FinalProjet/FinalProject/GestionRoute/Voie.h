@@ -2,6 +2,8 @@
 #include "..\Fonctionnalite\BaseFunc.h"
 #include "Bordure.h"
 #include "..\Fonctionnalite\Ressource.h"
+#include "../LeapMotion/LeapListener.h"
+#include "../include/Leap.h"
 
 class Voie
 {
@@ -19,7 +21,7 @@ public:
 	Bordure* TabBordure;
 	int NbBordures;
 	
-	void Update();
+	void Update(LeapListener *leaplistener);
 	void Draw(SDL_Surface* &ScreenSurface);
 
 };

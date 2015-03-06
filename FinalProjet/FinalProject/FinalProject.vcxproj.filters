@@ -103,6 +103,12 @@
     <Filter Include="Fichiers sources\Ennemi\GestionMissile">
       <UniqueIdentifier>{a91817e4-2036-430a-ae9b-2fca62a55772}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\GestionVitesseAnim">
+      <UniqueIdentifier>{0c3ccfce-d681-43d6-9182-7fa3add1c99f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\GestionVitesseAnim">
+      <UniqueIdentifier>{3db48195-eae9-45ea-9d71-28183829171f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -149,6 +155,9 @@
     </ClCompile>
     <ClCompile Include="Ennemi\GestionMissile\Missile.cpp">
       <Filter>Fichiers sources\Ennemi\GestionMissile</Filter>
+    </ClCompile>
+    <ClCompile Include="GestionVitesseAnim\GestionVitesseAnim.cpp">
+      <Filter>Fichiers sources\GestionVitesseAnim</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -394,6 +403,9 @@
     </ClInclude>
     <ClInclude Include="Ennemi\GestionMissile\Missile.h">
       <Filter>Fichiers d%27en-tête\Ennemi\GestionMissile</Filter>
+    </ClInclude>
+    <ClInclude Include="GestionVitesseAnim\GestionVitesseAnim.h">
+      <Filter>Fichiers d%27en-tête\GestionVitesseAnim</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

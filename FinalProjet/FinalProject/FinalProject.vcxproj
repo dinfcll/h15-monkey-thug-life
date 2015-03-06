@@ -80,6 +80,7 @@
     <ClCompile Include="GestionRoute\Bordure.cpp" />
     <ClCompile Include="GestionRoute\Route.cpp" />
     <ClCompile Include="GestionRoute\Voie.cpp" />
+    <ClCompile Include="GestionVitesseAnim\GestionVitesseAnim.cpp" />
     <ClCompile Include="LeapMotion\LeapListener.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Perso\Monkey.cpp" />
@@ -97,6 +98,7 @@
     <ClInclude Include="GestionRoute\Bordure.h" />
     <ClInclude Include="GestionRoute\Route.h" />
     <ClInclude Include="GestionRoute\Voie.h" />
+    <ClInclude Include="GestionVitesseAnim\GestionVitesseAnim.h" />
     <ClInclude Include="include\Leap.h" />
     <ClInclude Include="include\LeapMath.h" />
     <ClInclude Include="LeapMotion\LeapListener.h" />

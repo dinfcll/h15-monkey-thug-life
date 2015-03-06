@@ -1,6 +1,8 @@
 #pragma once
 #include "..\Fonctionnalite\BaseFunc.h"
 #include "..\Fonctionnalite\Ressource.h"
+#include "../LeapMotion/LeapListener.h"
+#include "../include/Leap.h"
 
 class Arbre
 {
@@ -18,8 +20,10 @@ public:
 	SDL_Rect* RecDestination6;
 	float Speed;
 	int Mode;
-
-	void Update();
+	
+	void Update(LeapListener *leaplistener);
 	void Draw(SDL_Surface* &SurfaceDessin);
+private:
+	float Speedinitial;
 };
 

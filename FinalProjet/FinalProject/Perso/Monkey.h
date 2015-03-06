@@ -1,5 +1,7 @@
 #pragma once
 #include "../GestionAnimation/AnimationPlayer.h"
+#include "../LeapMotion/LeapListener.h"
+#include "../include/Leap.h"
 
 class Monkey
 {
@@ -28,7 +30,7 @@ public:
 	int DecalageRoueArriereY;
 	int DecalageYeuxX;
 	int DecalageYeuxY;
-	void Update();
+	void Update(LeapListener *leaplistener);
 	void Draw(SDL_Surface* SurfaceDessin);
 };
 
