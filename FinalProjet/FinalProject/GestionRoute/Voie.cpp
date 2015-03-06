@@ -35,11 +35,11 @@ Voie::~Voie(void)
 
 }
 
-void Voie::Update()
+void Voie::Update(LeapListener *leaplistener)
 {
 	for(int i = 0; i < NbBordures; i++)
 	{
-		TabBordure[i].Update();
+		TabBordure[i].Update(leaplistener);
 	}
 }
 

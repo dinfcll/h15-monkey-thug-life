@@ -24,6 +24,10 @@ public:
 
 	float LYaw,LPitch,LRoll;
 	float RYaw,RPitch,RRoll;
+	float LPalmPositionx,RPalmPositionx,LPalmPositiony,RPalmPositiony;
+	float LPalmStrength, RPalmStrength;
+	
+	 
 private:	
 	string fingerNames[5]; 
 	string boneNames[4];

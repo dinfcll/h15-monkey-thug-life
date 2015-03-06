@@ -14,6 +14,7 @@ Nuage::Nuage(int Positionx, int Positiony, float Speed, Ressource Ressources)
 	this->Positionx = Positionx;
 	this->Positiony = Positiony;
 	this->Speed = Speed;
+	Speedinitial = Speed;
 	TabNuageTexture = new SDL_Surface[4];
 	TabNuageTexture[0] = *Ressources.TextureNuage1;
 	TabNuageTexture[1] = *Ressources.TextureNuage2;
@@ -50,8 +51,12 @@ Nuage::~Nuage(void)
 
 
 
-void Nuage::Update()
+void Nuage::Update(LeapListener *leaplistener)
 {
+	float Ajoutvitesse = -leaplistener->RRoll/55.0f;
+	if(Ajoutvitesse > 0)
+		Ajoutvitesse = 0;
+	Speed = Speedinitial + Ajoutvitesse;
 	Positionx -= Speed;
 	RecDestination->x = Positionx;
 

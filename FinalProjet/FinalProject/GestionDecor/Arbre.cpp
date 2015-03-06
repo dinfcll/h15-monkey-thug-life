@@ -15,6 +15,7 @@ Arbre::Arbre(int Positionx, int Positiony, float Speed, Ressource Ressources, in
 	this->Positionx = Positionx;
 	this->Positiony = Positiony;
 	this->Speed = Speed;
+	Speedinitial = Speed;
 	this->Mode = Mode;
 	TabArbreTexture = new SDL_Surface[4];
 	TabArbreTexture[0] = *Ressources.TextureArbre1;
@@ -61,8 +62,12 @@ Arbre::Arbre(int Positionx, int Positiony, float Speed, Ressource Ressources, in
 
 }
 
-void Arbre::Update()
+void Arbre::Update(LeapListener *leaplistener)
 {
+	float Ajoutvitesse = -leaplistener->RRoll/55.0f;
+
+	Speed = Speedinitial + Ajoutvitesse;
+	
 	Positionx -= Speed;
 	
 	RecDestination->x = Positionx;

@@ -17,6 +17,10 @@ LeapListener::LeapListener(void)
 	RYaw = 0;
 	RPitch = 0;
 	RRoll = 0;
+	RPalmPositionx = 0;
+	RPalmPositiony = 0;
+	LPalmPositionx = 0;
+	LPalmPositiony = 0;
 }
 
 
@@ -64,10 +68,24 @@ void LeapListener::onFrame(const Controller& controller) {
    /* std::string handType = hand.isLeft() ? "Left hand" : "Right hand";
     std::cout << std::string(2, ' ') << handType << ", id: " << hand.id()
               << ", palm position: " << hand.palmPosition() << std::endl;*/
+	if(hand.isLeft())
+	{
+		LPalmPositionx = hand.palmPosition().x;
+		LPalmPositiony = hand.palmPosition().z;
 
+		LPalmStrength = hand.grabStrength();
+	}
+	else
+	{
+		RPalmPositionx = hand.palmPosition().x;
+		RPalmPositiony = hand.palmPosition().z;
+
+		RPalmStrength = hand.grabStrength();
+	}
     // Get the hand's normal vector and direction
     const Vector normal = hand.palmNormal();
     const Vector direction = hand.direction();
+
 	
 	if(hand.isLeft())
 	{

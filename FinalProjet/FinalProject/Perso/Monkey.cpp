@@ -35,8 +35,21 @@ Monkey::Monkey(int X, int Y, Ressource Ressources)
 	BananeAnimation = new Animation(Ressources.Banane,25,15,1,true);
 }
 
-void Monkey::Update()
+void Monkey::Update(LeapListener *leaplistener)
 {
+	PosX = (leaplistener->RPalmPositionx /120.0f) * 900;
+	PosY = (leaplistener->RPalmPositiony /130.0f) * 600;
+
+	if(PosX < 0)
+		PosX = 0;
+	if(PosY < 145)
+		PosY = 145;
+	if(PosX > 710)
+		PosX = 710;
+	if(PosY > 270) 
+		PosY = 270;
+
+	
 	PlayerAP->PosX = PosX;
 	PlayerAP->PosY = PosY;
 	FWheelAP->PosX = PosX + DecalageRoueAvantX;

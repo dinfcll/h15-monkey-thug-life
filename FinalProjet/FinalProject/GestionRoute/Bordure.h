@@ -1,6 +1,8 @@
 #pragma once
 #include "..\Fonctionnalite\BaseFunc.h"
 #include "..\Fonctionnalite\Ressource.h"
+#include "../LeapMotion/LeapListener.h"
+#include "../include/Leap.h"
 
 class Bordure
 {
@@ -15,7 +17,9 @@ public:
 	int LargeurLimite;
 	float Speed;
 
-	void Update();
+	void Update(LeapListener *leaplistener);
 	void Draw(SDL_Surface* &ScreenSurface);
+private:
+	float Speedinitial;
 };
 

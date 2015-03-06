@@ -20,6 +20,7 @@ Bordure::Bordure(int Positionx, int Positiony, int LargeurLimite, int HauteurLim
 	this->Texturebordure = Ressources.Texturebordure;
 	this->LargeurLimite = LargeurLimite;
 	this->Speed = Speed;
+	Speedinitial = Speed;
 	RecDestination = new SDL_Rect();
 	RecDestination->x = this->Positionx;
 	RecDestination->y  = this->Positiony;
@@ -31,8 +32,11 @@ Bordure::~Bordure(void)
 {
 }
 
-void Bordure::Update()
+void Bordure::Update(LeapListener *leaplistener)
 {
+	float Ajoutvitesse = -leaplistener->RRoll/55.0f;
+
+	Speed = Speedinitial + Ajoutvitesse;
 	Positionx -= Speed;
 	RecDestination->x = Positionx;
 	if(RecDestination->x < -100)
