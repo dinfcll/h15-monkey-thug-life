@@ -16,6 +16,10 @@ public:
 	AnimationPlayer* BWheelAP;
 	AnimationPlayer* PlayerAP;
 	AnimationPlayer* YeuxAP;
+
+	//Classe projectile a creer
+	AnimationPlayer* ProjectileBananeAP;
+	Animation* BananeAnimation;
 	int PosX;
 	int PosY;
 	int DecalageRoueAvantX;

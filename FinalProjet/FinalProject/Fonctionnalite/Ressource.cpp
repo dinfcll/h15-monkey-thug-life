@@ -11,13 +11,13 @@ Ressource::Ressource()
 {
 	try
 	{
-		CheckupLoadSuccess(BaseFunc::LoadSurface("SimpleMonkeyNoTireNoE.png",Perso));
-		CheckupLoadSuccess(BaseFunc::LoadSurface("FWheelA.png",RoueAvant));
-		CheckupLoadSuccess(BaseFunc::LoadSurface("BWheelA.png",RoueArriere));
+		CheckupLoadSuccess(BaseFunc::LoadSurface("SimpleMonkeyNoTireNoE0P60.png",Perso));
+		CheckupLoadSuccess(BaseFunc::LoadSurface("FWheelA0P60.png",RoueAvant));
+		CheckupLoadSuccess(BaseFunc::LoadSurface("BWheelA0P60.png",RoueArriere));
 		CheckupLoadSuccess(BaseFunc::LoadSurface("Voie.png",Texturevoie));
 		CheckupLoadSuccess(BaseFunc::LoadSurface("Bordure.png",Texturebordure));
-		CheckupLoadSuccess(BaseFunc::LoadSurface("EyeA.png",YeuxPerso));
-		CheckupLoadSuccess(BaseFunc::LoadSurface("EyeAN.png",YeuxPersoRien));
+		CheckupLoadSuccess(BaseFunc::LoadSurface("EyeA0P60.png",YeuxPerso));
+		CheckupLoadSuccess(BaseFunc::LoadSurface("EyeAN0P60.png",YeuxPersoRien));
 		CheckupLoadSuccess(BaseFunc::LoadSurface("Arbre1.png",TextureArbre1));
 		CheckupLoadSuccess(BaseFunc::LoadSurface("Arbre2.png",TextureArbre2));
 		CheckupLoadSuccess(BaseFunc::LoadSurface("Arbre3.png",TextureArbre3));
@@ -36,6 +36,7 @@ Ressource::Ressource()
 		CheckupLoadSuccess(BaseFunc::LoadSurface("MotoNormal1P25.png",MotoNormal));
 		CheckupLoadSuccess(BaseFunc::LoadSurface("BazookaNormalOwnBazooka1P25.png",BazookaNormal));
 		CheckupLoadSuccess(BaseFunc::LoadSurface("MissileAnim.png",Missile));
+		CheckupLoadSuccess(BaseFunc::LoadSurface("BananeAnim.png",Banane));
 	}
 	catch (const char* msg) 
 	{
