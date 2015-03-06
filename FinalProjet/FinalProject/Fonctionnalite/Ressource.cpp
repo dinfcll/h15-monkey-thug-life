@@ -28,11 +28,14 @@ Ressource::Ressource()
 		CheckupLoadSuccess(BaseFunc::LoadSurface("Arbre4.png",TextureArbre4));
 		CheckupLoadSuccess(BaseFunc::LoadSurface("Nuage1.png",TextureNuage1));
 		CheckupLoadSuccess(BaseFunc::LoadSurface("Nuage2.png",TextureNuage2));
-		CheckupLoadSuccess(BaseFunc::LoadSurface("Camion_PorteOuverteD0.png",CamionPODO));
-		CheckupLoadSuccess(BaseFunc::LoadSurface("Camion_PorteOuverteD1.png",CamionPOD1));
-		CheckupLoadSuccess(BaseFunc::LoadSurface("Camion_PorteOuverteD2.png",CamionPOD2));
-		CheckupLoadSuccess(BaseFunc::LoadSurface("Camion_PorteOuverteD3.png",CamionPOD3));
-		CheckupLoadSuccess(BaseFunc::LoadSurface("Camion_PorteFerme.png",CamionPF));
+		CheckupLoadSuccess(BaseFunc::LoadSurface("Camion_PorteOuverteD01P25.png",CamionPODO));
+		CheckupLoadSuccess(BaseFunc::LoadSurface("Camion_PorteOuverteD11P25.png",CamionPOD1));
+		CheckupLoadSuccess(BaseFunc::LoadSurface("Camion_PorteOuverteD21P25.png",CamionPOD2));
+		CheckupLoadSuccess(BaseFunc::LoadSurface("Camion_PorteOuverteD31P25.png",CamionPOD3));
+		CheckupLoadSuccess(BaseFunc::LoadSurface("Camion_PorteFerme1P25.png",CamionPF));
+		CheckupLoadSuccess(BaseFunc::LoadSurface("MotoNormal1P25.png",MotoNormal));
+		CheckupLoadSuccess(BaseFunc::LoadSurface("BazookaNormalOwnBazooka1P25.png",BazookaNormal));
+		CheckupLoadSuccess(BaseFunc::LoadSurface("MissileAnim.png",Missile));
 	}
 	catch (const char* msg) 
 	{

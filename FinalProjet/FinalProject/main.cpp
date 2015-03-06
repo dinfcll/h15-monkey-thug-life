@@ -9,6 +9,8 @@
 #include "GestionDecor\Nuage.h"
 #include "GestionDecor\Arbre.h"
 #include "Ennemi\GestionCamion\Camion.h"
+#include "Ennemi\GestionMoto\Moto.h"
+#include "Ennemi\GestionMissile\Missile.h"
 
 using namespace Leap;
 using namespace std;
@@ -38,7 +40,9 @@ Monkey* MonkeyJoueur = new Monkey(0,100,Ressources);
 Nuage* Testnuage = new Nuage(50,20,1,Ressources);
 Nuage* Testnuage2 = new Nuage(1000,20,1,Ressources);
 
-Camion* CamionEnnemi = new Camion(50,175,Ressources);
+Camion* CamionEnnemi = new Camion(50,155,Ressources);
+Moto* MotoEnnemi2 = new Moto(400,150,Ressources);
+Missile* MissileTest = new Missile(450,190,Ressources);
 
 int main(int argc, char* args[])
 {
@@ -80,6 +84,7 @@ int main(int argc, char* args[])
 			{
 				CptVitesse = 0;
 				MonkeyJoueur->PosX++;
+				MissileTest->PosX--;
 			}
 
 			Testvoie->Update();
@@ -91,7 +96,9 @@ int main(int argc, char* args[])
 			Testnuage->Update();
 			Testnuage2->Update();
 			CamionEnnemi->Update();
-			
+			MissileTest->Update();
+			MotoEnnemi2->Update();
+
 			//[DRAW]
 			Testvoie->Draw(SurfaceDessin);
 			Testarbre->Draw(SurfaceDessin);
@@ -102,8 +109,9 @@ int main(int argc, char* args[])
 			MonkeyJoueur->Draw(SurfaceDessin);
 			Testnuage->Draw(SurfaceDessin);
 			Testnuage2->Draw(SurfaceDessin);
-			
-
+			MissileTest->Draw(SurfaceDessin);
+			MotoEnnemi2->Draw(SurfaceDessin);
+		
 			//aplha mode
 			/*if(CptOpacity > 255)
 				CptOpacity = 0;

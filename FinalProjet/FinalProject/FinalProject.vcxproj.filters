@@ -91,6 +91,18 @@
     <Filter Include="Fichiers sources\Ennemi\GestionCamion">
       <UniqueIdentifier>{f015f3e3-08ed-40b8-9a9c-c861ad934d96}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers sources\Ennemi\GestionMoto">
+      <UniqueIdentifier>{54b2f3ec-82f3-4f6d-b98a-bab64d087687}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Ennemi\GestionMoto">
+      <UniqueIdentifier>{39861f9a-d9d0-42a6-8c1b-06ee2ea461d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers d%27en-tête\Ennemi\GestionMissile">
+      <UniqueIdentifier>{9f09cba9-6bc8-4c23-b9f7-77c205be2c4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Ennemi\GestionMissile">
+      <UniqueIdentifier>{a91817e4-2036-430a-ae9b-2fca62a55772}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -131,6 +143,12 @@
     </ClCompile>
     <ClCompile Include="Ennemi\GestionCamion\Camion.cpp">
       <Filter>Fichiers sources\Ennemi\GestionCamion</Filter>
+    </ClCompile>
+    <ClCompile Include="Ennemi\GestionMoto\Moto.cpp">
+      <Filter>Fichiers sources\Ennemi\GestionMoto</Filter>
+    </ClCompile>
+    <ClCompile Include="Ennemi\GestionMissile\Missile.cpp">
+      <Filter>Fichiers sources\Ennemi\GestionMissile</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -370,6 +388,12 @@
     </ClInclude>
     <ClInclude Include="Ennemi\GestionCamion\Camion.h">
       <Filter>Fichiers d%27en-tête\Ennemi\GestionCamion</Filter>
+    </ClInclude>
+    <ClInclude Include="Ennemi\GestionMoto\Moto.h">
+      <Filter>Fichiers d%27en-tête\Ennemi\GestionMoto</Filter>
+    </ClInclude>
+    <ClInclude Include="Ennemi\GestionMissile\Missile.h">
+      <Filter>Fichiers d%27en-tête\Ennemi\GestionMissile</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

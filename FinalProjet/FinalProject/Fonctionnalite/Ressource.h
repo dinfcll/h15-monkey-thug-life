@@ -24,6 +24,9 @@ public:
 	SDL_Surface* CamionPOD2;
 	SDL_Surface* CamionPOD3;
 	SDL_Surface* CamionPF;
+	SDL_Surface* MotoNormal;
+	SDL_Surface* BazookaNormal;
+	SDL_Surface* Missile;
 };
 
 
