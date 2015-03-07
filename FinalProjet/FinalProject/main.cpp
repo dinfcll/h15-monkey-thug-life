@@ -36,7 +36,7 @@ Arbre* Testarbre2 = new Arbre(1000,60,2,Ressources,1);
 Arbre* Testarbrebas = new Arbre(300,60,2,Ressources,2);
 Arbre* Testarbrebas2 = new Arbre(1300,60,2,Ressources,2);
 
-Monkey* MonkeyJoueur = new Monkey(0,100,Ressources);
+Monkey* MonkeyJoueur = new Monkey(310,155,Ressources);
 Nuage* Testnuage = new Nuage(50,20,1,Ressources);
 Nuage* Testnuage2 = new Nuage(1000,20,1,Ressources);
 
@@ -83,7 +83,7 @@ int main(int argc, char* args[])
 			if(CptVitesse >= 1) 
 			{
 				CptVitesse = 0;
-				MonkeyJoueur->PosX++;
+				//MonkeyJoueur->PosX++;
 				MissileTest->PosX--;
 			}
 
@@ -111,7 +111,7 @@ int main(int argc, char* args[])
 			Testnuage2->Draw(SurfaceDessin);
 			MissileTest->Draw(SurfaceDessin);
 			MotoEnnemi2->Draw(SurfaceDessin);
-		
+
 			//aplha mode
 			/*if(CptOpacity > 255)
 				CptOpacity = 0;

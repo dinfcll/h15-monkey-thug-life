@@ -27,6 +27,7 @@ public:
 	SDL_Surface* MotoNormal;
 	SDL_Surface* BazookaNormal;
 	SDL_Surface* Missile;
+	SDL_Surface* Banane;
 };
 
 

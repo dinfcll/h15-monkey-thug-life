@@ -12,10 +12,10 @@ Monkey::~Monkey(void)
 
 Monkey::Monkey(int X, int Y, Ressource Ressources)
 {
-	PersoA = new Animation(Ressources.Perso,139,139,0.1f,true);
-	FWheelA = new Animation(Ressources.RoueAvant,75,75,0.5f,true);
-	BWheelA = new Animation(Ressources.RoueArriere,75,75,0.5f,true);
-	YeuxA = new Animation(Ressources.YeuxPerso,25,25,15,true);
+	PersoA = new Animation(Ressources.Perso,83,70,0.1f,true);
+	FWheelA = new Animation(Ressources.RoueAvant,45,45,0.5f,true);
+	BWheelA = new Animation(Ressources.RoueArriere,45,45,0.5f,true);
+	YeuxA = new Animation(Ressources.YeuxPerso,15,6,15,true);
 	YeuxAN = new Animation(Ressources.YeuxPersoRien,25,25,15,true);
 	FWheelAP = new AnimationPlayer();
 	BWheelAP = new AnimationPlayer();
@@ -23,12 +23,16 @@ Monkey::Monkey(int X, int Y, Ressource Ressources)
 	YeuxAP = new AnimationPlayer();
 	PosX = X;
 	PosY = Y;
-	DecalageRoueAvantX = 76;
-	DecalageRoueAvantY = 57;
-	DecalageRoueArriereX = -15;
-	DecalageRoueArriereY = 65;
-	DecalageYeuxX = 26;
-	DecalageYeuxY = 23;
+	DecalageRoueAvantX = 45;
+	DecalageRoueAvantY = 35;
+	DecalageRoueArriereX = -9;
+	DecalageRoueArriereY = 40;
+	DecalageYeuxX = 16;
+	DecalageYeuxY = 13;
+	
+	//classe projectile
+	ProjectileBananeAP = new AnimationPlayer();
+	BananeAnimation = new Animation(Ressources.Banane,25,15,1,true);
 }
 
 void Monkey::Update()
@@ -45,6 +49,11 @@ void Monkey::Update()
 	BWheelAP->PlayAnimation(*BWheelA);
 	PlayerAP->PlayAnimation(*PersoA);
 	YeuxAP->PlayAnimation(*YeuxA);
+
+	//classe projectile
+	ProjectileBananeAP->PosX = PosX;
+	ProjectileBananeAP->PosY = PosY;
+	ProjectileBananeAP->PlayAnimation(*BananeAnimation);
 }
 
 void Monkey::Draw(SDL_Surface* SurfaceDessin)
@@ -53,6 +62,8 @@ void Monkey::Draw(SDL_Surface* SurfaceDessin)
 	BWheelAP->Draw(SurfaceDessin);
 	PlayerAP->Draw(SurfaceDessin);
 	YeuxAP->Draw(SurfaceDessin);
+
+	ProjectileBananeAP->Draw(SurfaceDessin);
 }
 
 
