@@ -109,6 +109,12 @@
     <Filter Include="Fichiers sources\GestionVitesseAnim">
       <UniqueIdentifier>{3db48195-eae9-45ea-9d71-28183829171f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers d%27en-tête\Perso\Projectile">
+      <UniqueIdentifier>{fc47889e-cbc6-4567-b720-74f403f08423}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\Perso\Projectile">
+      <UniqueIdentifier>{5dd4dcf7-f717-4fb9-b257-6a9402e26a4a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -158,6 +164,9 @@
     </ClCompile>
     <ClCompile Include="GestionVitesseAnim\GestionVitesseAnim.cpp">
       <Filter>Fichiers sources\GestionVitesseAnim</Filter>
+    </ClCompile>
+    <ClCompile Include="Perso\Projectile\ProjectileBanane.cpp">
+      <Filter>Fichiers sources\Perso\Projectile</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -406,6 +415,9 @@
     </ClInclude>
     <ClInclude Include="GestionVitesseAnim\GestionVitesseAnim.h">
       <Filter>Fichiers d%27en-tête\GestionVitesseAnim</Filter>
+    </ClInclude>
+    <ClInclude Include="Perso\Projectile\ProjectileBanane.h">
+      <Filter>Fichiers d%27en-tête\Perso\Projectile</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

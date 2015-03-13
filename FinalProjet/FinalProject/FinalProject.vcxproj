@@ -84,6 +84,7 @@
     <ClCompile Include="LeapMotion\LeapListener.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Perso\Monkey.cpp" />
+    <ClCompile Include="Perso\Projectile\ProjectileBanane.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Ennemi\GestionCamion\Camion.h" />
@@ -103,6 +104,7 @@
     <ClInclude Include="include\LeapMath.h" />
     <ClInclude Include="LeapMotion\LeapListener.h" />
     <ClInclude Include="Perso\Monkey.h" />
+    <ClInclude Include="Perso\Projectile\ProjectileBanane.h" />
     <ClInclude Include="SDL\Image\SDL_image.h" />
     <ClInclude Include="SDL\include\begin_code.h" />
     <ClInclude Include="SDL\include\close_code.h" />
