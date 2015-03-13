@@ -1,7 +1,10 @@
 #pragma once
 #include "../GestionAnimation/AnimationPlayer.h"
 #include "../LeapMotion/LeapListener.h"
+#include "Projectile/ProjectileBanane.h"
 #include "../include/Leap.h"
+#include <list>
+using namespace std;
 
 class Monkey
 {
@@ -18,10 +21,12 @@ public:
 	AnimationPlayer* BWheelAP;
 	AnimationPlayer* PlayerAP;
 	AnimationPlayer* YeuxAP;
-
+	list<ProjectileBanane>* ListBanane;  
+	Ressource RessourceProjet;
+	float cptSpeedProjectile;
+	float SpeedProjectile;
 	//Classe projectile a creer
-	AnimationPlayer* ProjectileBananeAP;
-	Animation* BananeAnimation;
+	
 	int PosX;
 	int PosY;
 	int DecalageRoueAvantX;

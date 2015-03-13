@@ -1,12 +1,14 @@
-﻿La génération a démarré 06/03/2015 15:44:56.
-     1>Projet "C:\Ecole\Vision\Projet Leap Motion\Git\h15-monkey-thug-life\FinalProjet\FinalProject\FinalProject.vcxproj" sur le nœud 2 (build cible(s)).
+﻿La génération a démarré 2015-03-13 14:45:47.
+     1>Projet "C:\Users\Usager\Desktop\h15-monkey-thug-life-master\FinalProjet\FinalProject\FinalProject.vcxproj" sur le nœud 2 (build cible(s)).
      1>InitializeBuildStatus:
          Création de "Debug\FinalProject.unsuccessfulbuild", car "AlwaysCreate" a été spécifié.
        ClCompile:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GestionVitesseAnim\GestionVitesseAnim.cpp
-         GestionVitesseAnim.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Perso\Monkey.cpp
+         Monkey.cpp
+     1>c:\users\usager\desktop\h15-monkey-thug-life-master\finalprojet\finalproject\perso\monkey.cpp(41): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
+     1>c:\users\usager\desktop\h15-monkey-thug-life-master\finalprojet\finalproject\perso\monkey.cpp(42): warning C4244: '=' : conversion de 'float' en 'int', perte possible de données
        Link:
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Ecole\Vision\Projet Leap Motion\Git\h15-monkey-thug-life\FinalProjet\Debug\FinalProject.exe" /NOLOGO /MANIFEST /ManifestFile:"Debug\FinalProject.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Ecole\Vision\Projet Leap Motion\Git\h15-monkey-thug-life\FinalProjet\Debug\FinalProject.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Ecole\Vision\Projet Leap Motion\Git\h15-monkey-thug-life\FinalProjet\Debug\FinalProject.lib" /MACHINE:X86 Debug\Camion.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Usager\Desktop\h15-monkey-thug-life-master\FinalProjet\Debug\FinalProject.exe" /NOLOGO /MANIFEST /ManifestFile:"Debug\FinalProject.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Usager\Desktop\h15-monkey-thug-life-master\FinalProjet\Debug\FinalProject.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Usager\Desktop\h15-monkey-thug-life-master\FinalProjet\Debug\FinalProject.lib" /MACHINE:X86 Debug\Camion.obj
          Debug\Missile.obj
          Debug\Moto.obj
          Debug\BaseFunc.obj
@@ -22,6 +24,7 @@
          Debug\LeapListener.obj
          Debug\main.obj
          Debug\Monkey.obj
+         Debug\ProjectileBanane.obj
          lib\Leap.lib
          lib\Leapd.lib
          SDL\Image\SDL2_image.lib
@@ -31,15 +34,15 @@
          SDL\lib\x86\SDL2.lib
          SDL\lib\x86\SDL2main.lib
          SDL\lib\x86\SDL2test.lib
-         LINK : C:\Ecole\Vision\Projet Leap Motion\Git\h15-monkey-thug-life\FinalProjet\Debug\FinalProject.exe introuvable ou non généré par la dernière édition de liens incrémentielle ; édition de liens complète en cours
-         FinalProject.vcxproj -> C:\Ecole\Vision\Projet Leap Motion\Git\h15-monkey-thug-life\FinalProjet\Debug\FinalProject.exe
+         LINK : C:\Users\Usager\Desktop\h15-monkey-thug-life-master\FinalProjet\Debug\FinalProject.exe introuvable ou non généré par la dernière édition de liens incrémentielle ; édition de liens complète en cours
+         FinalProject.vcxproj -> C:\Users\Usager\Desktop\h15-monkey-thug-life-master\FinalProjet\Debug\FinalProject.exe
        Manifest:
-         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Ecole\Vision\Projet Leap Motion\Git\h15-monkey-thug-life\FinalProjet\Debug\FinalProject.exe;#1" /manifest Debug\FinalProject.exe.intermediate.manifest
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Usager\Desktop\h15-monkey-thug-life-master\FinalProjet\Debug\FinalProject.exe;#1" /manifest Debug\FinalProject.exe.intermediate.manifest
        FinalizeBuildStatus:
          Suppression du fichier "Debug\FinalProject.unsuccessfulbuild".
          Mise à jour de l'horodatage "Debug\FinalProject.lastbuildstate".
-     1>Génération du projet "C:\Ecole\Vision\Projet Leap Motion\Git\h15-monkey-thug-life\FinalProjet\FinalProject\FinalProject.vcxproj" terminée (build cible(s)).
+     1>Génération du projet "C:\Users\Usager\Desktop\h15-monkey-thug-life-master\FinalProjet\FinalProject\FinalProject.vcxproj" terminée (build cible(s)).
 
 La génération a réussi.
 
-Temps écoulé 00:00:01.56
+Temps écoulé 00:00:01.39

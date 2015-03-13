@@ -11,7 +11,7 @@ Ressource::Ressource()
 {
 	try
 	{
-		CheckupLoadSuccess(BaseFunc::LoadSurface("SimpleMonkeyNoTireNoE0P60.png",Perso));
+		CheckupLoadSuccess(BaseFunc::LoadSurface("Moto10P60.png",Perso));
 		CheckupLoadSuccess(BaseFunc::LoadSurface("FWheelA0P60.png",RoueAvant));
 		CheckupLoadSuccess(BaseFunc::LoadSurface("BWheelA0P60.png",RoueArriere));
 		CheckupLoadSuccess(BaseFunc::LoadSurface("Voie.png",Texturevoie));

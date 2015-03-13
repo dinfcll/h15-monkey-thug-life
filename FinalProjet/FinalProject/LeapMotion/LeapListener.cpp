@@ -92,12 +92,14 @@ void LeapListener::onFrame(const Controller& controller) {
 		LPitch = direction.pitch() * RAD_TO_DEG;
 		LRoll = normal.roll() * RAD_TO_DEG;
 		LYaw = direction.yaw() * RAD_TO_DEG;
+		LPalmStrength = hand.grabStrength();
 	}
 	else
 	{
 		RPitch = direction.pitch() * RAD_TO_DEG;
 		RRoll = normal.roll() * RAD_TO_DEG;
 		RYaw = direction.yaw() * RAD_TO_DEG;
+		RPalmStrength = hand.grabStrength();
 	}
 	hand.direction() = Vector();
 	hand.palmNormal() = Vector();

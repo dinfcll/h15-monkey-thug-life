@@ -28,17 +28,19 @@ Monkey::Monkey(int X, int Y, Ressource Ressources)
 	DecalageRoueArriereX = -9;
 	DecalageRoueArriereY = 40;
 	DecalageYeuxX = 16;
-	DecalageYeuxY = 13;
-	
-	//classe projectile
-	ProjectileBananeAP = new AnimationPlayer();
-	BananeAnimation = new Animation(Ressources.Banane,25,15,1,true);
+	DecalageYeuxY = 13;  
+	RessourceProjet = Ressources;
+	ListBanane = new list<ProjectileBanane>();
+
+	cptSpeedProjectile = 0;
+	SpeedProjectile = 0.025f;
 }
 
 void Monkey::Update(LeapListener *leaplistener)
 {
 	PosX = (leaplistener->RPalmPositionx /120.0f) * 900;
 	PosY = (leaplistener->RPalmPositiony /130.0f) * 600;
+	
 
 	if(PosX < 0)
 		PosX = 0;
@@ -48,6 +50,31 @@ void Monkey::Update(LeapListener *leaplistener)
 		PosX = 710;
 	if(PosY > 270) 
 		PosY = 270;
+
+	if(leaplistener->RPalmStrength > 0.75f)
+	{
+		cptSpeedProjectile += SpeedProjectile;
+		if(cptSpeedProjectile > 1.0f)
+		{
+			cptSpeedProjectile = 0;
+			ListBanane->push_back(*new ProjectileBanane(PosX, PosY,RessourceProjet));
+		}
+	}
+
+	int index = 0;
+	for(auto i = ListBanane->begin(); i != ListBanane->end();)
+	{
+		//if(i->Delete)
+		//	i = ListBanane->erase(i);
+		//else
+		//{
+		i->Update();
+		if(i->Delete)
+			i = ListBanane->erase(i);
+		else 
+			++i;
+		/*}*/
+	}
 
 	
 	PlayerAP->PosX = PosX;
@@ -62,11 +89,6 @@ void Monkey::Update(LeapListener *leaplistener)
 	BWheelAP->PlayAnimation(*BWheelA);
 	PlayerAP->PlayAnimation(*PersoA);
 	YeuxAP->PlayAnimation(*YeuxA);
-
-	//classe projectile
-	ProjectileBananeAP->PosX = PosX;
-	ProjectileBananeAP->PosY = PosY;
-	ProjectileBananeAP->PlayAnimation(*BananeAnimation);
 }
 
 void Monkey::Draw(SDL_Surface* SurfaceDessin)
@@ -76,7 +98,10 @@ void Monkey::Draw(SDL_Surface* SurfaceDessin)
 	PlayerAP->Draw(SurfaceDessin);
 	YeuxAP->Draw(SurfaceDessin);
 
-	ProjectileBananeAP->Draw(SurfaceDessin);
+	for (list<ProjectileBanane>::iterator banane = ListBanane->begin(); banane != ListBanane->end(); banane++)
+	{
+		banane->Draw(SurfaceDessin);
+	}
 }
 
 
